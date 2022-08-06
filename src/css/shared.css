@@ -1,0 +1,119 @@
+
+
+body{
+    background: url(../assets/images/bg.jpg);background-size: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-self: center;
+    margin: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.header .bu_logo {
+    padding-right: 20px;
+}
+
+nav {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    flex: 1;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+nav li {
+    float: right;
+}
+
+main {
+    margin: auto 5%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1, h3, h5 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+.reminder{
+    color: brown;
+}
+
+.list_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.imag_container, .index-video {
+    width: 600px;
+    height: auto;
+    text-align: center;
+
+}
+
+
+.imag_container_Lisa {
+    width: 280px;
+    height: 372px;
+    text-align: center;
+
+}
+
+/*requirements 2: remove images based on the screen size*/
+@media (max-width: 650px) {
+    .imag_container, .fig_subtitle{
+       display: none;
+    }
+}
+
+/*requirements 2: change list color*/
+@media (max-width: 700px) {
+    .musicGenreTable {
+        color: orangered;
+    }
+}
+
+/*change image size and text */
+@media (max-width: 600px) {
+    .index-video {
+        width: 300px;
+    }
+    .imag_container_Lisa {
+        width: 180px;
+        height: 272px;
+    }
+    .p-title {
+        color: orangered;
+    }
+}
+
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
