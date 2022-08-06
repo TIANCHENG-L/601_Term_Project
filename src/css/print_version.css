@@ -1,0 +1,29 @@
+@media print {
+
+    /* set page size and orientation */
+    @page {
+        /*standard page size*/
+        size: 8.5in 11in;
+        margin: 3cm;
+    }
+
+    /* resize image */
+    img {
+        /* set size constrains */
+        max-width: 8in;
+        max-height: 10.5in;
+        width: auto;
+        height: auto;
+    }
+
+    /* do not display these elements */
+    header nav, video {
+        display: none;
+    }
+
+    header .header {
+        margin-top: 35px;
+    }
+
+
+}
